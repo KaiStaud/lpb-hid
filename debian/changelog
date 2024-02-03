@@ -1,0 +1,6 @@
+lpb-hid (1.0.0-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- kai <>  Sat, 03 Feb 2024 10:31:06 +0100
