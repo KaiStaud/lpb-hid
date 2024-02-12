@@ -7,7 +7,10 @@
 
 %:
 	dh $@  
-
-#override_dh_auto_configure:
-#	dh_auto_configure -- \
-#	      -DCMAKE_LIBRARY_ARCHITECTURE="$(DEB_TARGET_MULTIARCH)"
+	git config --global --add safe.directory $(PWD)
+#	/var/cache/elbe/07d52500-b865-4072-98e9-444e44e838a9/pdebuilder/current
+#	git config --global --add safe.directory /home/sta/lpb-hid
+override_dh_auto_configure:
+	cmake -Bbuild
+override_dh_auto_build:
+	cmake --build build

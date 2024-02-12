@@ -2,7 +2,17 @@ Source: lpb-hid
 Section: unknown
 Priority: optional
 Maintainer: kai <>
-Build-Depends: cmake, debhelper-compat (= 12),git,ecal,libecal-2.0-dev
+Build-Depends: cmake,
+ debhelper-compat (= 12),
+ git,
+ gcc,
+ g++,
+ libhidapi-dev,
+ ecal,
+ libgoogle-glog-dev,
+ protobuf-compiler,
+ libprotobuf-dev,
+ libcli11-dev,
 Standards-Version: 4.5.0
 Homepage: <insert the upstream URL, if relevant>
 
